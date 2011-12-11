@@ -34,8 +34,19 @@ h1 a{
     text-indent: -9999px;
     overflow: hidden;
 }
-p#phrase{
+div#subtitle{
+   margin: 0 10px; 
+}
+div#header .title{
     color: #6B492D;
+}
+div#sitename{
+    position: relative;
+}
+div#ruby{
+    top: 22px;
+    left: 265px;
+    position: absolute;
 }
 h2{
     padding: 0.4em 0 0.8em 0;

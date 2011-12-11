@@ -10,7 +10,7 @@
 }
 body {
     margin: 0 10px;
-    background: #e5e5e5;
+    background: tan;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 13px;
     *font-size: small;
@@ -28,11 +28,14 @@ h3{
 }
 h1 a{
     display: block;
-    width: 217px;
-    height: 42px;
+    width: 253px;
+    height: 49px;
     background: transparent url(/images/cb_logo.jpg) 0 0 no-repeat;
     text-indent: -9999px;
     overflow: hidden;
+}
+p#phrase{
+    color: #6B492D;
 }
 h2{
     padding: 0.4em 0 0.8em 0;
@@ -96,7 +99,7 @@ div#header h1{
     margin: 0 8px;
 }
 div#header ul {
-    margin: 0 8px;
+    margin: 0 10px;
     padding: 10px 0;
 }
 div#header ul:after{

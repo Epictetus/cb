@@ -1,0 +1,115 @@
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #666;
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0 10px;
+    background: #e5e5e5;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 13px;
+    *font-size: small;
+    *font: x-small;
+}
+p,
+address{
+    margin: 0.8em 10px;
+}
+h1,
+h2,
+h3{
+    margin: 0.8em 10px;
+    line-height: 1.2;
+}
+h1{
+    font-size: 180%;
+}
+h2{
+    padding: 0.4em 0 0.8em 0;
+    color: #cd4730;
+    font-size: 120%;
+}
+h3{
+    margin-bottom: 0;
+    color: #333;
+    font-size: 120%;
+}
+a:link{
+    color: #00597c;
+}
+a:visited{
+    color: #7d94a4;
+}
+a:hover{
+    color: #cd4730;
+}
+ul,
+ol,
+dl{
+    margin: 0.8em 10px;
+    padding: 1px 10px;
+    list-style-position: inside;
+}
+dt{
+    margin: 0.4em 10px;
+    color: #004171;
+}
+dd{
+    margin: 0 10px;
+}
+/* BASE */
+div#header,
+div#content,
+div#footer{
+    margin: auto;
+    width: 900px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+div#image{
+    float: left;
+    width: 550px;
+    background-color: #FFFFFF;
+}
+div#main{
+    float: right;
+    width: 342px; 
+    background-color: #FFFFFF;
+}
+div#header{
+    padding-top: 6px;
+    position: relative;
+}
+div#header h1{
+    margin: 0 8px;
+}
+div#header ul {
+    margin: 8px 8px;
+    padding: 5px 0 0 0;
+}
+div#header ul:after{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+div#header li{
+    float: left;
+    width: 151px;
+}
+div#content:after{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+}
+div#footer address{
+    margin-top: 8px;
+    text-align: center;
+}

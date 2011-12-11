@@ -13,7 +13,7 @@
 <body>
     <div id="header">
         <p id="phrase">小さな手作りパン工房</p>
-        <h1><%= link_to 'Coupé Baguette', action: 'home' %></h1>
+        <h1><%= link_to 'Coupé Baguette', '/' %></h1>
         <ul>
             <li><%= link_to 'Concept', action: 'concept' %></li>
             <li><%= link_to 'Menu', action: 'menu' %></li>
@@ -23,7 +23,7 @@
     </div>
     <div id="content">
         <div id="image">
-            <%= image_tag(action_name + ".jpg", size: "550x367", alt:"Pain") %>
+            <%= image_tag action_name + ".jpg", size: "550x367" %>
         </div>
         <div id="main">
             <%= yield %>

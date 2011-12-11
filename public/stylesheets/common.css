@@ -112,6 +112,7 @@ div#header ul:after{
 div#header li{
     float: left;
     width: 151px;
+    list-style-type: none;
 }
 div#content:after{
     height: 0;

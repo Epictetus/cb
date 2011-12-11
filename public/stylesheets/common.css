@@ -39,10 +39,12 @@ h3{
     font-size: 120%;
 }
 a:link{
-    color: #00597c;
+    color: #666;
+    text-decoration:none;
 }
 a:visited{
-    color: #7d94a4;
+    color: #666;
+    text-decoration:none;
 }
 a:hover{
     color: #cd4730;

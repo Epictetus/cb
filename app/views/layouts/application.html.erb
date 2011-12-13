@@ -26,14 +26,16 @@
     </div>
     <div id="content">
         <div id="image">
-            <%= image_tag action_name + ".jpg", size: "550x367" %>
+            <div id="imagebypage">
+                <%= image_tag action_name + ".jpg", size: "550x367" %>
+            </div>
+            <div id="copyright">
+                <address>Copyright (C) Coupé Baguette All rights reserved.</address>
+            </div>
         </div>
         <div id="main">
             <%= yield %>
         </div>
-    </div>
-    <div id="footer">
-        <address>Copyright (C) Coupé Baguette All rights reserved.</address>
     </div>
 </body>
 </html>

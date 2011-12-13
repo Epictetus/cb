@@ -131,7 +131,7 @@ div#content:after{
     display: block;
     clear: both;
 }
-div#footer address{
+div#copyright address{
     padding: 10px 0;
 }
 p.listalign{

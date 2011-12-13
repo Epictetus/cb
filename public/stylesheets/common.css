@@ -10,7 +10,7 @@
 }
 body {
     margin: 0 10px;
-    background: #DDD;
+    background: #FFF;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 13px;
     *font-size: small;
@@ -133,7 +133,6 @@ div#content:after{
 }
 div#footer address{
     padding: 10px 0;
-    text-align: center;
 }
 p.listalign{
     margin: 0.8em 20px;

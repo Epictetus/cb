@@ -10,7 +10,6 @@ class InquiryNotifier < ActionMailer::Base
   def create(inquiry)
     @inquiry = inquiry
 
-    #mail :to => "natural@coupe-baguette.com", :subject => "Webサイトからの問い合わせ"
     mail :to => ENV['CB_MAIL_TO'], :subject => "Webサイトからの問い合わせ [" + inquiry.name + "]"
   end
 end

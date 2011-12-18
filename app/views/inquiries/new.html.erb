@@ -10,16 +10,18 @@
 <% else %>
     <p>ご質問やご要望がある方は以下のフォームからお尋ねください。</p>
 <% end %>
-<dl>
-    <dt><%= form.label :name %> *</dt>
-    <dd><%= form.text_field :name %></dd>
-    <dt><%= form.label :email %> *</dt>
-    <dd><%= form.text_field :email %></dd>
-    <dt><%= form.label :tel %></dt>
-    <dd><%= form.text_field :tel %></dd>
-    <dt><%= form.label :text %> *</dt>
-    <dd><%= form.text_area :text, :size => "40x8" %></dd>
-</dl>
+<div id="inputform">
+    <dl>
+        <dt><%= form.label :name %> *</dt>
+        <dd><%= form.text_field :name %></dd>
+        <dt><%= form.label :email %> *</dt>
+        <dd><%= form.text_field :email %></dd>
+        <dt><%= form.label :tel %></dt>
+        <dd><%= form.text_field :tel %></dd>
+        <dt><%= form.label :text %> *</dt>
+        <dd><%= form.text_area :text, :size => "40x8" %></dd>
+    </dl>
+</div>
 <p class="listalign">
 <%= image_submit_tag("sendbutton.png") %>
 </p>

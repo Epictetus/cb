@@ -148,3 +148,9 @@ p.listalign{
     margin: 0.8em 20px;
     padding: 1px 10px;
 }
+#inputform input,
+#inputform textarea{
+    border:1px solid #DDD;
+    color:#666666;
+    padding:4px 2px;
+}

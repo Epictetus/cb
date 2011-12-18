@@ -1,6 +1,15 @@
 <h1>Inquiries#new</h1>
 <p>Find me in app/views/inquiries/new.html.erb</p>
 <%= form_for @inquiry do |form| %>
-<%= form.text_field :name %>
+<dl>
+    <dt>お名前</dt>
+    <dd><%= form.text_field :name %></dd>
+    <dt>E-mail</dt>
+    <dd><%= form.text_field :email %></dd>
+    <dt>Tel</dt>
+    <dd><%= form.text_field :tel %></dd>
+    <dt>内容</dt>
+    <dd><%= form.text_area :text %></dd>
+</dl>
 <%= form.submit %>
 <% end %>

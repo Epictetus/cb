@@ -1,4 +1,6 @@
 Cb::Application.routes.draw do
+  resources :inquiries, :only => [:create, :new]
+
   get "pages/home"
 
   get "pages/concept"

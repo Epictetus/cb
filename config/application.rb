@@ -35,6 +35,7 @@ module Cb
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
+    config.i18n.default_locale = :ja
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
@@ -50,5 +51,10 @@ module Cb
         password: ENV['CB_MAIL_PW'],
         enable_starttls_auto: true
     }
+    # http://www.rabbitcreative.com/2010/09/20/rails-3-still-fucking-up-field_with_errors/
+    ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
+        include ActionView::Helpers::RawOutputHelper
+        raw %(<span class="field_with_errors">#{html_tag}</span>)
+    end
   end
 end

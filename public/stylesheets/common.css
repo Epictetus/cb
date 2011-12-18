@@ -48,14 +48,16 @@ div#ruby{
     left: 265px;
     position: absolute;
 }
-h2{
+h2,
+#error_explanation{
     color: #cd4730;
+}
+h2{
     font-size: 120%;
 }
 h3{
     margin: 1.2em 10px 0.2em 10px;
-    color: #333;
-    font-size: 120%;
+    font-size: 110%;
 }
 a:link{
     color: #666;
@@ -75,9 +77,14 @@ dl{
     padding: 1px 10px;
     list-style-position: inside;
 }
-dt{
-    margin: 0.4em 10px 0 10px;
+dt,
+dt label
+{
     color: #8B4513;
+}
+dt
+{
+    margin: 0.4em 10px 0 10px;
 }
 dd{
     margin: 0 10px;

@@ -6,7 +6,12 @@ class InquiriesController < ApplicationController
 
   def create
     @inquiry = Inquiry.new(params[:inquiry])
-    InquiryNotifier.create(@inquiry).deliver
+    if @inquiry.valid?
+        InquiryNotifier.create(@inquiry).deliver
+    else
+        respond_to do |f|
+            f.html { render action: "new" }
+        end
+    end
   end
-
 end

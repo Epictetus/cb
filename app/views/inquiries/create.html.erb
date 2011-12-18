@@ -1,13 +1,13 @@
 <h2>送信が完了しました</h2>
 <p>折り返しご連絡させていただきますので、しばらくお待ちください。</p>
+<h3>送信内容</h3>
 <dl>
-    <dt>お名前</dt>
+    <dt><%= Inquiry.human_attribute_name 'name' %></dt>
     <dd><%= @inquiry.name %></dd>
-    <dt>E-mail</dt>
+    <dt><%= Inquiry.human_attribute_name 'email' %></dt>
     <dd><%= @inquiry.email %></dd>
-    <dt>Tel</dt>
-    <dd><%= @inquiry.tel %></dd>
-    <dt>内容</dt>
+    <dt><%= Inquiry.human_attribute_name 'tel' %></dt>
+    <dd><%= @inquiry.tel.empty? ? '(未入力)' : @inquiry.tel %></dd>
+    <dt><%= Inquiry.human_attribute_name 'text' %></dt>
     <dd><%= simple_format @inquiry.text %></dd>
 </dl>
-<%= link_to 'Homeに戻る', '/' %>

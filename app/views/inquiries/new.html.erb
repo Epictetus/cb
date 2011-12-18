@@ -1,14 +1,23 @@
 <h2>Contact</h2>
-<p>ご質問やご要望がある方は以下のフォームからお尋ねください。</p>
 <%= form_for @inquiry do |form| %>
+<% if @inquiry.errors.any? %>
+    <p id="error_explanation">未入力の項目があります。</p>
+    <ul>
+        <% @inquiry.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% else %>
+    <p>ご質問やご要望がある方は以下のフォームからお尋ねください。</p>
+<% end %>
 <dl>
-    <dt>お名前</dt>
+    <dt><%= form.label :name %> *</dt>
     <dd><%= form.text_field :name %></dd>
-    <dt>E-mail</dt>
+    <dt><%= form.label :email %> *</dt>
     <dd><%= form.text_field :email %></dd>
-    <dt>Tel</dt>
+    <dt><%= form.label :tel %></dt>
     <dd><%= form.text_field :tel %></dd>
-    <dt>内容</dt>
+    <dt><%= form.label :text %> *</dt>
     <dd><%= form.text_area :text, :size => "40x8" %></dd>
 </dl>
 <p class="listalign">

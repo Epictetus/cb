@@ -1,4 +1,11 @@
+<%= Inquiry.human_attribute_name 'name' %>
 <%= @inquiry.name %>
+
+<%= Inquiry.human_attribute_name 'email' %>
 <%= @inquiry.email %>
-<%= @inquiry.tel %>
+
+<%= Inquiry.human_attribute_name 'tel' %>
+<%= @inquiry.tel.empty? ? '(未入力)' : @inquiry.tel %>
+
+<%= Inquiry.human_attribute_name 'text' %>
 <%= @inquiry.text %>

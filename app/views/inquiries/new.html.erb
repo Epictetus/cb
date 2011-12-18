@@ -1,5 +1,5 @@
-<h1>Inquiries#new</h1>
-<p>Find me in app/views/inquiries/new.html.erb</p>
+<h2>Contact</h2>
+<p>ご質問やご要望がある方は以下のフォームからお尋ねください。</p>
 <%= form_for @inquiry do |form| %>
 <dl>
     <dt>お名前</dt>
@@ -9,7 +9,9 @@
     <dt>Tel</dt>
     <dd><%= form.text_field :tel %></dd>
     <dt>内容</dt>
-    <dd><%= form.text_area :text %></dd>
+    <dd><%= form.text_area :text, :size => "40x8" %></dd>
 </dl>
-<%= form.submit %>
+<p class="listalign">
+<%= form.submit :value => "送信する" %>
+</p>
 <% end %>

@@ -9,4 +9,6 @@ class Inquiry < ActiveRecord::Base
   column :email, :string
   column :tel, :string
   column :text, :text
+
+  validates :name, :email, :text, presence: true
 end

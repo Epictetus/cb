@@ -178,3 +178,7 @@ p.listalign{
     margin: 0.8em 20px;
     padding: 1px 10px;
 }
+.note {
+    color: #888;
+    font-size: 90%;
+}

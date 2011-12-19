@@ -23,7 +23,7 @@ p
 h1,
 h2,
 h3{
-    margin: 0.8em 10px;
+    margin: 0 10px;
     line-height: 1.2;
 }
 h1 a{
@@ -73,7 +73,7 @@ a:hover{
 ul,
 ol,
 dl{
-    margin: 0.8em 10px;
+    margin: 0.8em 0;
     padding: 1px 10px;
     list-style-position: inside;
 }
@@ -84,16 +84,15 @@ dt label
 }
 dt
 {
-    margin: 0.4em 10px 0 10px;
+    margin: 0.4em 10px 0 0;
 }
 dd{
-    margin: 0 10px;
+    margin: 0 0;
 }
 dd p{
     margin: 0 0;
 }
 form {
-    margin: 0.5em 10px;
 }
 fieldset {
     padding: 0 10px 0.3em 10px;
@@ -174,7 +173,8 @@ div#content:after{
 div#copyright address{
     padding: 10px 0;
 }
-p.listalign{
+.listalign
+{
     margin: 0.8em 20px;
     padding: 1px 10px;
 }

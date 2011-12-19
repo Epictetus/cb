@@ -92,8 +92,27 @@ dd{
 dd p{
     margin: 0 0;
 }
+form {
+    margin: 0.5em 10px;
+}
+fieldset {
+    padding: 0 10px 0.3em 10px;
+    border: 1px solid #eee;
+}
+legend {
+    margin-left: 1em;
+    padding: 0 10px;
+    font-size: 90%;
+}
+input,
+textarea {
+    font-size: 90%;
+    border:1px solid #DDD;
+    color:#666666;
+    padding:4px 2px;
+}
 .button {
-    padding:10px;
+    padding:7px;
     background-color: #F5F5F5;
     border: 1px solid #CCC;
     color:#666;
@@ -102,7 +121,6 @@ dd p{
     cursor: pointer;
     font-weight: bold;
 }
-
 /* BASE */
 div#header,
 div#content,
@@ -158,10 +176,4 @@ div#copyright address{
 p.listalign{
     margin: 0.8em 20px;
     padding: 1px 10px;
-}
-#inputform input,
-#inputform textarea{
-    border:1px solid #DDD;
-    color:#666666;
-    padding:4px 2px;
 }

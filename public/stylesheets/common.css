@@ -110,6 +110,7 @@ textarea {
     border:1px solid #DDD;
     color:#666666;
     padding:4px 2px;
+    width: 320px;
 }
 .button {
     padding:7px;

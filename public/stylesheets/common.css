@@ -92,6 +92,17 @@ dd{
 dd p{
     margin: 0 0;
 }
+.button {
+    padding:10px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCC;
+    color:#666;
+    text-decoration:none;
+    width: 100px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* BASE */
 div#header,
 div#content,

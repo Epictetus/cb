@@ -20,7 +20,6 @@ p
 {
     margin: 0.8em 10px;
 }
-h1,
 h2,
 h3{
     margin: 0 10px;
@@ -34,9 +33,6 @@ h1 a{
     text-indent: -9999px;
     overflow: hidden;
 }
-div#subtitle{
-   margin: 0 10px; 
-}
 div#header .title{
     color: #6B492D;
 }
@@ -45,7 +41,7 @@ div#sitename{
 }
 div#ruby{
     top: 22px;
-    left: 265px;
+    left: 257px;
     position: absolute;
 }
 h2,
@@ -106,7 +102,7 @@ legend {
 input,
 textarea {
     font-size: 90%;
-    border:1px solid #DDD;
+    border:1px solid #AAA;
     color:#666666;
     padding:4px 2px;
     width: 320px;
@@ -114,7 +110,7 @@ textarea {
 .button {
     padding:7px;
     background-color: #F5F5F5;
-    border: 1px solid #CCC;
+    border: 1px solid #AAA;
     color:#666;
     text-decoration:none;
     width: 100px;
@@ -144,11 +140,8 @@ div#header{
     padding-top: 6px;
     position: relative;
 }
-div#header h1{
-    margin: 0 8px;
-}
 div#header ul {
-    margin: 0 10px;
+    margin: 0 0;
     padding: 10px 0;
 }
 div#header ul:after{
@@ -160,7 +153,7 @@ div#header ul:after{
 }
 div#header li{
     float: left;
-    width: 125px;
+    width: 130px;
     list-style-type: none;
 }
 div#content:after{

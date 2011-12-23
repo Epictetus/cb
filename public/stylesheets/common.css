@@ -10,7 +10,10 @@
 }
 body {
     margin: 0 10px;
-    background: #FFF;
+    background: #2d1f13;
+background-image:url(/images/bg.gif);
+background-repeat:  repeat-y;
+background-position: center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 13px;
     *font-size: small;
@@ -18,11 +21,10 @@ body {
 }
 p
 {
-    margin: 0.8em 10px;
+    margin: 0.8em 0;
 }
 h2,
 h3{
-    margin: 0 10px;
     line-height: 1.2;
 }
 h1 a{
@@ -52,7 +54,7 @@ h2{
     font-size: 120%;
 }
 h3{
-    margin: 1.2em 10px 0.2em 10px;
+    margin: 1.2em 0 0.2em 0;
     font-size: 110%;
 }
 a:link{
@@ -69,8 +71,7 @@ a:hover{
 ul,
 ol,
 dl{
-    margin: 0.8em 0;
-    padding: 1px 10px;
+    padding: 1px 0;
     list-style-position: inside;
 }
 dt,
@@ -80,7 +81,7 @@ dt label
 }
 dt
 {
-    margin: 0.8em 10px 0 0;
+    margin: 0.8em 0 0 0;
 }
 dd{
     margin: 0 0;
@@ -111,26 +112,32 @@ div#header,
 div#content,
 div#footer{
     margin: auto;
-    width: 900px;
+    width: 831px;
+    /*
     background-color: #FFFFFF;
+    */
     text-align: left;
+    padding: 0 30px;
 }
 div#image{
     float: left;
     width: 550px;
+    /*
     background-color: #FFFFFF;
+    */
 }
 div#main{
     float: right;
-    width: 342px; 
+    width: 261px; 
+    /*
     background-color: #FFFFFF;
+    */
 }
 div#header{
     padding-top: 6px;
     position: relative;
 }
 div#header ul {
-    margin: 0 0;
     padding: 10px 0;
 }
 div#header ul:after{
@@ -157,10 +164,11 @@ div#copyright address{
 }
 .listalign
 {
-    margin: 0.8em 20px;
-    padding: 1px 10px;
+    margin-left: 20px;
 }
 .note {
     color: #888;
     font-size: 90%;
+}
+div#content {
 }
